@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!--Página abre com 67% de escala pra não fica com muito zoom-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Icone na guia da página-->
+        <title>IOT com HTML e CSS</title>    
+        <link rel="icon" type="image/png" href="Imagens/Favicon Branco.png">
+        <!--Links diretos do Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--Conexão com o CSS-->
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/reset.css">
+</head>
+<body>
+        <div class="wrapperContainer wrapperContainer-dark wrapperContainer-fixed">
+            <!--Cabeçalho da página-->
+            <header class="header container">
+                <img class="logoTOPO" src="Imagens/LogoETEC branca.png" alt="ETEC">
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </nav>
+                <button id="darkModeToggle" class="btn-darkmode">
+                    <span class="btn-darkmode-icon">🌙</span>
+                    <span class="btn-darkmode-text">Modo Escuro</span>
+                </button>
+            </header>
+        </div>
+    <!--Seção Hero/banner principal-->
+    <div class="wrapperContainer wrapperContainer-hero">
+        <!--criando o container do banner-->
+        <section class="container heroBanner">
+            <!--Sessão do título e botão-->
+            <div class="header_content">
+                <!--título do banner-->
+                <h1 class="hero_title"><span class="upper">IOT</span> <br> Internet da Coisas </h1>
+                <a href="https://youtube.com/playlist?list=PLYjrJH3e_wDNLUTN32WittrpBxeleEqNp&si=2nPsGQTGlbkPaNa1" target="_blank" class="btn">Saiba Mais</a>
+            </div>
+            <img class="arduino_img" src="Imagens/HeroImage.png" alt="Arduino UNO">
+            
+        </section>
+    </div>
+
+    <div class="wrapperContainer wrapperContainer-light wrapperContainer-padded" id="projetos">
+        <section class="Cursos container">
+        <h2 class="section_title"> Principais Projetos</h2>
+            <!--Cards Cursos-->
+            <div class="cursosContainer">
+            <!--Card LED-->
+                <article class="curso_card">
+                <iframe width="600" height="400" src="https://www.tinkercad.com/embed/e0hroxAKt6t-aula-kevin-2702" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                <div class="curso_card_content">
+                <h3>Led Acesso</h3>
+                <p>Com o uso de um resistor e uma protoboard conseguimos fazer a ligação de um led.</p>
+                </div>
+            </article>
+            <!--Card Lâmpada-->
+            <article class="curso_card">
+                <iframe width="600" height="400" src="https://www.tinkercad.com/embed/9s8YRuGTg6N-lampada" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                <div class="curso_card_content">
+                <h3>Lâmpada Acessa</h3>
+                <p>Com o uso de um resistor, um transistor e uma fonte de energia 12 volts, fizemos a ligação de uma lâmpada.</p>
+                </div>
+            </article>
+            <!--Card Motor-->
+            <article class="curso_card">
+                <iframe width="600" height="400" src="https://www.tinkercad.com/embed/12CPamtT8uG-motor" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                <div class="curso_card_content">
+                <h3>Motor Rodando</h3>
+                <p>Com uso de relé, transistor e fonte 12v, fazemos a ligação de motor, nesse caso, em sentido anti-horário.</p>
+                </div>
+            </article>
+
+        </div>
+        <a href="https://www.tinkercad.com/users/3kFyPXSZWoo?type=circuits" target="_blank" class="btn section_btn">Ver mais projetos</a>
+        </section>
+    </div>
+    <!--Seção sobre a escola-->
+    <div class="wrapperContainer wrapperContainer-dark2 wrapperContainer-padded" id="sobre">
+        <section class="container escola">
+            <img class="escola_img" src="Imagens/Icon Escola Branco.png" alt="Icone escola">
+            <div class="escola_content">
+                <h2 class="escola_title">Sobre Nós</h2>
+                <p>A ETEC Embu é uma escola técnica que oferece formação profissional de qualidade, combinando teoria e prática para preparar alunos para o mercado de trabalho. Com cursos técnicos, estrutura moderna e professores qualificados, nossa missão é transformar vidas através da educação.</p>
+        </section>
+    </div>
+    <div class="wrapperContainer wrapperContainer-light wrapperContainer-padded" id="contatos">
+        <section class="container">
+            <!--Endereço da escola no maps-->
+            <h2 class="map_title">Localização</h2>
+            <div class="map_geo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.968422000667!2d-46.83605240000001!3d-23.6413019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfaacf201352ab%3A0x68c49ecf2cbe15ca!2sEtec%20de%20Embu%20das%20Artes!5e0!3m2!1spt-BR!2sbr!4v1749285521813!5m2!1spt-BR!2sbr" width="1200" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!--Informações de Contato da Escola-->
+            <h2 class="section_title_under">Contatos</h2>
+            <address class="contatos_address"> R. Marcelino Pinto Teixeira, 529 <br> (11) 4778-1168 <br> secretaria_embu@hotmail.com <br></address>
+        </section>
+    </div>
+    <div class="wrapperContainer wrapperContainer-dark">
+        <footer class="footer">Desenvolvido por Kaique Nascimento </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
